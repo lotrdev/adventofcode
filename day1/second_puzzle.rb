@@ -1,8 +1,8 @@
 ##
 # http://adventofcode.com/day/1
-input = File.open('input.txt', 'rb')
-directions = input.read
-input.close
+require ('../shared')
+
+directions = read_input
 
 pos, floor = 0, 0
 directions.scan(/(\(*)(\)*)/) do |x, y|
